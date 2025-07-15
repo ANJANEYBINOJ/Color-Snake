@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#gameContainer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+    border: 3px solid white;
+    background: #0a0a0a;
+    border-radius: 10px;
+}
+
+#gameInfo {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#colorIndicator {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#controls {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#gameOver {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+#gameOver h2 {
+    color: #ff6b6b;
+    margin: 0 0 20px 0;
+}
+
+#gameOver button {
+    background: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#gameOver button:hover {
+    background: #45b7d1;
+}

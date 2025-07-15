@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div id="colorIndicator">Current Color: RED</div>
+        <div id="gameInfo">
+            <div>Score: <span id="score">0</span></div>
+            <div>Length: <span id="length">1</span></div>
+        </div>
+        <div id="controls">
+            Use Arrow Keys or WASD to move | Space to pause | R to restart
+        </div>
+    </div>
+
+    <div id="gameOver">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <p>Snake Length: <span id="finalLength">1</span></p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
